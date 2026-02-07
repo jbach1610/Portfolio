@@ -3,64 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hien Bach - Professional Portfolio</title>
+    <title>Hien Bach - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="../assets/Notion_Ava.png" alt="Hien Bach" class="avatar-nav">
                 <span>Professional Portfolio</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#brands" class="nav-link">Brands</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-header">
-                    <img src="../assets/Notion_Ava.png" alt="Hien Bach" class="profile-avatar">
-                    <div class="about-intro">
-                        <h1>Hien Bach</h1>
-                        <p class="subtitle">Senior Data Analytics & Quantitative Economics Student</p>
-                    </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, welcome! <br>
+                        I'm <span class="highlight">Hien Bach</span>
+                    </h1>
+                    <p class="hero-subtitle">A Game Changer On Your Data Team</p>
+                    <p class="hero-description">
+                        A <span class="highlight">Quantitative Economics & Data Analytics</span> major currently finishing my final quest at Beloit College.
+                        <br><br>
+                        <span class="highlight">My gameplay style?</span> Transforming complex data problems into visually stunning dashboards, compelling stories, and winning business strategies.
+                        <br><br>
+                        <span class="highlight">My mission?</span> Joining a high-growth team where innovation meets impact, and data drives real-world change.
+                        
+                        When I'm away from the keyboard, you'll find me binge-watching K-dramas (consider me your personal review bot for recs 👀) or volunteering on local community side quests. Let’s connect and chat about how I can bring these skills to your team!
+                    </p>
+                    <a href="#experience" class="cta-button">View My Work</a>
                 </div>
-                <div class="about-text">
-                    <p>Hi, I'm Hien Bach, but you can call me Julie. I'm a senior double-majoring in Quantitative Economics and Data Analytics, graduating this May. I'm passionate about transforming complex data into actionable insights that fuel strategic business decisions.</p>
-                    
-                    <p>I aspire to grow in tech-driven, innovative environments where ideas are valued, collaboration fuels creativity, and new technologies are embraced. Through experience spanning advertising, publishing, manufacturing, and education, I've developed a blend of technical expertise and business acumen in market research, strategy, pricing, and analytics, enabling me to deliver solutions that balance numbers with impact.</p>
-                    
-                    <p>Outside of work, I'm a huge K-drama fan (drop me a title and I'll give you a full review 👀) and an active volunteer. I love connecting with like-minded people and helping organize meaningful community events.</p>
-                </div>
-
-                <div class="contact-info">
-                    <a href="mailto:btmhien1610@gmail.com" class="contact-link">📧 btmhien1610@gmail.com</a>
-                    <a href="#" class="contact-link">🔗 LinkedIn</a>
-                    <a href="#" class="contact-link">📄 Resume</a>
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">6</span>
-                        <span class="stat-label">Internships Completed</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">3.9+</span>
-                        <span class="stat-label">GPA</span>
-                    </div>
+                <div class="hero-image">
+                    <img src="profile.jpeg" alt="Hien Bach (Julie)" />
                 </div>
             </div>
         </div>
@@ -69,178 +58,824 @@
     <!-- Achievements Section -->
     <section id="achievements" class="achievements-section">
         <div class="container">
-            <h2>Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <h3>RISE Scholarship 2024</h3>
-                    <p>Awarded by <a href="https://www.linkedin.com/posts/the-brandlab_marketing-advertising-thebrandlab-activity-7232067966215892993-uJMO" target="_blank">The BrandLab</a></p>
+            <h2>Achievements & <span class="highlight">Stats</span></h2>
+            <div class="stats stats-compact">
+                <div class="stat">
+                    <h3><span class="counter" data-target="6">0</span></h3>
+                    <p>Internships Completed</p>
                 </div>
-                <div class="achievement-card">
-                    <h3>Presidential Scholarship</h3>
-                    <p>Awarded by Beloit College</p>
+                <div class="stat">
+                    <h3><span class="counter" data-target="15">0</span><span class="muted">+</span></h3>
+                    <p>Projects Completed</p>
                 </div>
-                <div class="achievement-card">
-                    <h3>Elaine and Les McAllister Award in Economics</h3>
-                    <p>Awarded by <a href="https://www.beloit.edu/live/profiles/2921-elaine-and-les-mcallister-award-in-economics" target="_blank">Beloit College</a></p>
+                <div class="stat">
+                    <h3>3.9+</h3>
+                    <p>GPA</p>
                 </div>
-                <div class="achievement-card">
-                    <h3>Foundations of Machine Learning Certificate</h3>
-                    <p>Awarded by <a href="https://www.breakthroughtech.org/" target="_blank">Break Through Tech, Cornell Tech</a></p>
-                </div>
+            </div>
+
+            <div class="award-filters" role="tablist" aria-label="Filter awards">
+                <button class="filter-btn active" data-filter="scholarship" aria-pressed="true">Scholarships</button>
+                <button class="filter-btn" data-filter="certificate" aria-pressed="false">Certificates</button>
+                <button class="filter-btn" data-filter="award" aria-pressed="false">Awards</button>
+            </div>
+
+            <div class="awards-row" id="awards-row">
+                <div class="award-chip" data-category="scholarship">RISE Scholarship 2024 — The BrandLab</div>
+                <div class="award-chip" data-category="scholarship">Presidential Scholarship — Beloit College</div>
+                <div class="award-chip" data-category="award">Elaine &amp; Les McAllister Award in Economics — Beloit College</div>
+                <div class="award-chip" data-category="certificate">Foundations of Machine Learning — Cornell Tech</div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Skill Cloud) -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-tabs">
-                <button class="tab-btn active" data-tab="software">Software</button>
-                <button class="tab-btn" data-tab="strategy">Strategy</button>
-                <button class="tab-btn" data-tab="analytics">Data Analysis</button>
-            </div>
+            <h2>Skills & <span class="highlight">Expertise</span></h2>
+            <!-- <p class="skills-intro">Hover or focus bubbles to see details — size reflects proficiency.</p> -->
 
-            <div id="software" class="tab-content active">
-                <div class="skills-grid">
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">BigQuery</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">R</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Excel</span>
+            <div class="skills-layout">
+                <div class="skills-filters" role="tablist" aria-label="Filter skills">
+                    <button class="skill-filter-btn active" data-filter="all" aria-pressed="true"><span class="skill-swatch swatch-all"></span>All</button>
+                    <button class="skill-filter-btn" data-filter="db" aria-pressed="false"><span class="skill-swatch swatch-db"></span>Databases</button>
+                    <button class="skill-filter-btn" data-filter="lang" aria-pressed="false"><span class="skill-swatch swatch-lang"></span>Languages</button>
+                    <button class="skill-filter-btn" data-filter="bi" aria-pressed="false"><span class="skill-swatch swatch-bi"></span>Visualization & BI</button>
+                    <button class="skill-filter-btn" data-filter="cloud" aria-pressed="false"><span class="skill-swatch swatch-cloud"></span>Cloud</button>
+                    <!-- <button class="skill-filter-btn" data-filter="tools" aria-pressed="false"><span class="skill-swatch swatch-tools"></span>Tools</button> -->
+                    <button class="skill-filter-btn" data-filter="inter" aria-pressed="false"><span class="skill-swatch swatch-comm"></span>Interpersonal</button>
+                </div>
+
+                <div class="skill-cloud" aria-label="Skill cloud">
+                    <button class="skill-pill category-db" data-category="db" data-level="5" data-desc="Relational querying & optimization" aria-describedby="skill-tip">SQL</button>
+                    <button class="skill-pill category-db" data-category="db" data-level="4" data-desc="Relational database management" aria-describedby="skill-tip">PostgreSQL</button>
+                    <button class="skill-pill category-db" data-category="db" data-level="5" data-desc="Relational database management" aria-describedby="skill-tip">MySQL</button>
+                    <button class="skill-pill category-db" data-category="db" data-level="5" data-desc="Data warehouse querying" aria-describedby="skill-tip">BigQuery</button>
+
+                    <button class="skill-pill category-lang" data-category="lang" data-level="5" data-desc="Data analysis & automation" aria-describedby="skill-tip">Python</button>
+                    <button class="skill-pill category-lang" data-category="lang" data-level="4" data-desc="Statistical computing" aria-describedby="skill-tip">R</button>
+                    <button class="skill-pill category-lang" data-category="lang" data-level="3" data-desc="Statistical analysis" aria-describedby="skill-tip">Stata</button>
+
+                    <button class="skill-pill category-bi" data-category="bi" data-level="5" data-desc="Dashboards & storytelling" aria-describedby="skill-tip">Tableau</button>
+                    <button class="skill-pill category-bi" data-category="bi" data-level="4" data-desc="Dashboards & reporting" aria-describedby="skill-tip">Power BI</button>
+                    <button class="skill-pill category-bi" data-category="bi" data-level="5" data-desc="Advanced spreadsheets" aria-describedby="skill-tip">Microsoft Excel</button>
+                    <button class="skill-pill category-bi" data-category="bi" data-level="3" data-desc="Analytics dashboards" aria-describedby="skill-tip">Pyramid Analytics</button>
+                    <button class="skill-pill category-tools" data-category="bi" data-level="3" data-desc="CRM & reporting" aria-describedby="skill-tip">Salesforce CRM</button>
+                    <!-- <button class="skill-pill category-tools" data-category="other" data-level="3" data-desc="Surveys & insights" aria-describedby="skill-tip">Survey Monkey</button> -->
+
+                    <button class="skill-pill category-cloud" data-category="cloud" data-level="3" data-desc="Cloud services" aria-describedby="skill-tip">AWS</button>
+                    <button class="skill-pill category-cloud" data-category="cloud" data-level="4" data-desc="Cloud services" aria-describedby="skill-tip">Microsoft Azure</button>
+                    <button class="skill-pill category-cloud" data-category="cloud" data-level="4" data-desc="Cloud services" aria-describedby="skill-tip">Google Cloud Platform</button>
+
+                    <button class="skill-pill category-comm" data-category="inter" data-level="3" data-desc="Aligning stakeholders across teams" aria-describedby="skill-tip">Cross-functional Collab</button>
+                    <button class="skill-pill category-comm" data-category="inter" data-level="4" data-desc="Turning data into clear narratives" aria-describedby="skill-tip">Storytelling</button>
+                    <button class="skill-pill category-comm" data-category="inter" data-level="3" data-desc="Executive-ready presentations" aria-describedby="skill-tip">Presentation</button>
+                    <button class="skill-pill category-comm" data-category="inter" data-level="4" data-desc="Understanding data ambiguity" aria-describedby="skill-tip">Problem-Solving</button>
+                    <button class="skill-pill category-comm" data-category="inter" data-level="4" data-desc="Ensuring data integrity" aria-describedby="skill-tip">Detail-oriented</button>
+
                 </div>
             </div>
 
-            <div id="strategy" class="tab-content">
-                <div class="skills-grid">
-                    <span class="skill-tag">Market Research</span>
-                    <span class="skill-tag">Business Strategy</span>
-                    <span class="skill-tag">Pricing Strategy</span>
-                    <span class="skill-tag">Competitive Analysis</span>
-                </div>
-            </div>
-
-            <div id="analytics" class="tab-content">
-                <div class="skills-grid">
-                    <span class="skill-tag">Statistical Analysis</span>
-                    <span class="skill-tag">Data Visualization</span>
-                    <span class="skill-tag">Predictive Modeling</span>
-                    <span class="skill-tag">A/B Testing</span>
-                </div>
-            </div>
+            <div id="skill-tip" class="skill-tooltip" role="status" aria-live="polite"></div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Advertising Business Analytics Intern</h3>
-                        <span class="company"><a href="https://www.nytimes.com/" target="_blank">The New York Times</a></span>
+            <h2>Professional <span class="highlight">Experience</span></h2>
+            <div class="timeline-wrapper">
+                <button class="timeline-control prev" aria-label="Previous" title="Previous">‹</button>
+                <div class="experience-timeline" role="list" aria-label="Experience timeline">
+                <div class="experience-milestone" data-company="The New York Times">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/nyt.webp" alt="The New York Times logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Business Analytics Intern</h3>
+                                <h4>The New York Times</h4>
+                            </div>
+                        </div>
+                        <!-- <div class="milestone-detail" hidden>
+                            <p>Worked on client segmentation and reporting improvements.</p>
+                            <img src="projects/nyt-dashboard.png" alt="Dashboard preview" class="detail-image">
+                            <ul>
+                                <li>Deployed a clustering model to segment 1100+ clients into 4 profiles using ad-performance, loyalty, and spend metrics.</li>
+                                <li>Developed 3 Tableau dashboards integrated with BigQuery, improving reporting speed.</li>
+                                <li>Presented insights to leadership to guide sales strategy and retention.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Deployed a clustering model to segment 1100+ clients into 4 profiles using ad-performance, loyalty, and spend metrics, presenting insights to leadership to guide sales strategy and retention</li>
-                        <li>Developed 3 Tableau dashboards integrated with BigQuery, boosting milestone and spending tracking speed by 12x</li>
-                    </ul>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Data Analytics Intern</h3>
-                        <span class="company"><a href="https://www.voith.com/corp-en/index.html" target="_blank">Voith Group</a></span>
+                <div class="experience-milestone" data-company="Beloit College">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/beloit.png" alt="Beloit College logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Research Analyst Intern</h3>
+                                <h4>Institutional Research & Planning Office</h4>
+                            </div>
+                        </div>
+                        <!-- <div class="milestone-detail" hidden>
+                            <p>Student survey analysis and time-series benchmarking.</p>
+                            <img src="projects/beloit-study.png" alt="Study preview" class="detail-image">
+                            <ul>
+                                <li>Analyzed 500+ student survey responses in Python, identifying key retention drivers.</li>
+                                <li>Conducted time series analysis of 10-year data in Stata for benchmarking.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Built a regression pricing model for corporate clients, boosting margin consistency across product lines and regions</li>
-                        <li>Streamlined sales reporting with Python and Pyramid, reducing turnaround by 40% and delivering real-time insights</li>
-                    </ul>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Data Intern</h3>
-                        <span class="company"><a href="https://natureattheconfluence.com/" target="_blank">Nature At The Confluence</a></span>
+                <div class="experience-milestone" data-company="Voith Group">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/voith.svg" alt="Voith Group logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Data Analytics Intern</h3>
+                                <h4>Voith Group</h4>
+                            </div>
+                        </div>
+                        <!-- <div class="milestone-detail" hidden>
+                            <p>Pricing model and reporting automation.</p>
+                            <img src="projects/voith-model.png" alt="Model preview" class="detail-image">
+                            <ul>
+                                <li>Built a regression pricing model for corporate clients, improving margin consistency.</li>
+                                <li>Streamlined sales reporting with Python and Pyramid, reducing turnaround by 40%.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Consolidated annual reports highlighting program successes, impact assessment, partnerships and collaboration, and financial breakdowns by gathering and analyzing qualitative survey and institution CMS data</li>
-                    </ul>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Research Analyst Intern</h3>
-                        <span class="company"><a href="https://www.beloit.edu/offices/institutional-research-assessment-planning/" target="_blank">Institutional Research, Assessment & Planning Office</a></span>
+
+                <div class="experience-milestone" data-company="Laughlin Constable">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/lc.png" alt="Laughlin Constable logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Strategy Intern</h3>
+                                <h4>Laughlin Constable</h4>
+                            </div>
+                        </div>
+                        <!-- <div class="milestone-detail" hidden>
+                            <p>Competitive research and client pitches.</p>
+                            <img src="projects/laughlin-deck.png" alt="Deck preview" class="detail-image">
+                            <ul>
+                                <li>Researched industry competitors and synthesized insights into client pitch decks.</li>
+                                <li>Compiled survey results into a comparative healthcare deck for Northwestern Medicine.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Analyzed 500+ student survey responses in Python, uncovering 5 key drivers of retention and satisfaction</li>
-                        <li>Conducted time series analysis of 10-year data in Stata, benchmarking against 20+ institutions to inform decisions</li>
-                    </ul>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Strategy Intern</h3>
-                        <span class="company"><a href="https://www.laughlin.com/" target="_blank">Laughlin Constable</a></span>
+                <div class="experience-milestone" data-company="Nature At The Confluence">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/nature.webp" alt="Nature At The Confluence logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Data Intern</h3>
+                                <h4>Nature At The Confluence</h4>
+                            </div>
+                        </div>
+                        <!-- <div class="milestone-detail" hidden>
+                            <p>Reporting and qualitative analysis support.</p>
+                            <img src="projects/nature-report.png" alt="Report preview" class="detail-image">
+                            <ul>
+                                <li>Consolidated annual reports highlighting program successes and partnerships.</li>
+                                <li>Analyzed qualitative survey and CMS data for comprehensive reporting.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Researched 10+ industry competitors, synthesizing quantitative and qualitative insights into client pitch decks</li>
-                        <li>Compiled 700+ survey responses into a comparative healthcare deck for Northwestern Medicine to guide strategy</li>
-                    </ul>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Business Development Intern</h3>
-                        <span class="company"><a href="https://www.viotgroup.com/?lang=en" target="_blank">VIoT Group</a></span>
+                <div class="experience-milestone" data-company="VIoT Group">
+                    <div class="milestone-dot"></div>
+                    <div class="milestone-content" tabindex="0">
+                        <div class="milestone-header">
+                            <img src="logos/viot.png" alt="VIoT Group logo" class="company-logo">
+                            <div class="brief-text">
+                                <h3>Business Development Intern</h3>
+                                <h4>VIoT Group</h4>
+                            </div>
+                        <!-- </div>
+                        <div class="milestone-detail" hidden>
+                            <p>Sustainability initiative support.</p>
+                            <img src="projects/viot-initiative.png" alt="Initiative preview" class="detail-image">
+                            <ul>
+                                <li>Supported a sustainable lighting initiative contributing to securing a $100K grant.</li>
+                            </ul>
+                            <p><a href="#" class="detail-link">View project details</a></p>
+                        </div> -->
                     </div>
-                    <ul class="experience-details">
-                        <li>Supported developing a sustainable lighting initiative, contributing to securing a $100K grant</li>
-                    </ul>
                 </div>
+                </div>
+                <button class="timeline-control next" aria-label="Next" title="Next">›</button>
             </div>
-            <div class="resume-link">
-                <a href="#" class="btn-primary">📄 View Full Resume</a>
+
+    <!-- Modal for milestone details -->
+    <div id="milestone-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal" role="document">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-body" tabindex="0"></div>
+        </div>
+    </div>
+
+                <!-- Live region for screen readers: announces active timeline card -->
+                <div id="timeline-live" class="sr-only" aria-live="polite" aria-atomic="true" role="status"></div>
             </div>
         </div>
     </section>
 
-    <!-- Brands Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid collapsed">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/dsda310-case1/thumbnail.png" alt="Sustainability & Profitability Case Study thumbnail" class="project-thumb">
+                    </div>
+                    <div class="project-content">
+                        <h3>ESG & Profitability Strategy</h3>
+                        <p>Analyzed GreenFuture Biochem’s performance across sales, R&amp;D, manufacturing, and supply chain to balance sustainability and profitability.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Sustainability & Profitability Case Study</h3>
+                            <p class="project-detail-subtitle">Data Analytics</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Tableau</span>
+                                        <span class="tag-chip">Excel</span>
+                                        <!-- <span class="tag-chip">Pricing</span>
+                                        <span class="tag-chip">Analytics</span> -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Business Strategy</li>
+                                        <li>Data Visualization</li>
+                                        <li>Dashboard Building</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/13WOOi0A7PX0SxuHDYL4_m6iLbEcQR0Mz/view" target="_blank" rel="noopener">Full Report</a></li>
+                                        <li><a href="https://www.canva.com/design/DAG4ZwHxY4o/81zqYkgefZqYzaHIbQ54DA/edit?utm_content=DAG4ZwHxY4o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Full Presentation</a></li>
+                                        <li><a href="https://public.tableau.com/app/profile/julie.bach5338/viz/DSDA310-CaseStudy1/MANUFACTURING" target="_blank" rel="noopener">Manufacturing Dashboard</a></li>
+                                        <li><a href="https://public.tableau.com/app/profile/julie.bach5338/viz/DSDA310-CaseStudy1/SALES" target="_blank" rel="noopener">Sales Dashboard</a></li>
+                                        <li><a href="https://public.tableau.com/app/profile/julie.bach5338/viz/DSDA310-CaseStudy1/SUPPLYCHAIN" target="_blank" rel="noopener">Supply Chain Dashboard</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>This case study is about a global manufacturer of bio-based specialty chemicals called GreenFuture Biochem with five core markets, encompassing 50 brands and over 750 SKUs over the world. The goal is to analyze the company performance on Sales, R&D, Manufacturing, and Supply Chain, proposing a holistic view of its profitability and sustainability and identifying areas for improvement.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <ul>
+                                        <li>The provided datasets were mostly clean, so we mainly used Excel for data exploration, cleaning, and dataset joining.</li>
+                                        <li>Tableau served as a main tool for visualizations and building three dashboards.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li><strong>Short-term strategy (within a year)</strong>
+                                            <ul>
+                                                <li>Optimize Supplier Mix: lower 10% of order quantities from dominant suppliers using the CO2 avoided per $ of procurement shift metric.</li>
+                                                <li>Refocus sales efforts on key categories/segments: prioritize late-stage opportunities with higher probability in Industrial Lubricants &amp; Automotive Solutions, and refine value messaging to increase win-rate in Consumer &amp; Home Care.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Long-term strategy (1–3 years)</strong>
+                                            <ul>
+                                                <li>Supply diversification: source materials closer to production plants to reduce logistics costs and emissions.</li>
+                                                <li>R&amp;D acceleration: invest in Specialty Polymers and Automotive Solutions with high sales potential to innovate more cost-efficient, high-margin products.</li>
+                                                <li>Green procurement KPIs: adopt sustainable KPIs (e.g., CO2 per $1M purchased; Supplier Sustainable Index weighted by unit cost, emissions, and on-time delivery scores).</li>
+                                                <li>Real-time Performance Tracking: use dashboards to monitor key sustainability and profitability metrics continuously.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Dashboards</h4>
+                                    <ul>
+                                        <li>Interactive dashboards for Sales, Manufacturing, and Supply Chain.</li>
+                                    </ul>
+                                    <div class="work-samples">
+                                        <img src="projects/dsda310-case1/manufacturing-dashboard.png" alt="Elasticity model output" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/sales-dashboard.png" alt="Pricing band recommendations" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/supplychain-dashboard.png" alt="Pricing band recommendations" class="work-sample-image">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div>
+                                    <h4>Presentations</h4>
+                                    <div class="work-samples work-samples-3col">
+                                        <img src="projects/dsda310-case1/overview.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/overall performance.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/business performance.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/business performance cont.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/price and emissions.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/quick wins.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/structural change.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/data-driven tracking.png" class="work-sample-image">
+                                        <img src="projects/dsda310-case1/key takeaways.png" class="work-sample-image">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/factbook/thumbnail.png" alt="Beloit College Fact Book thumbnail" class="project-thumb">
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Institutional Fact Book</h3>
+                        <p>Developed a comprehensive report that benchmarks 20+ peer institutions on 7 areas to support strategic decision-making and planning.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Beloit College Fact Book</h3>
+                            <p class="project-detail-subtitle">Data Analytics</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Stata</span>
+                                        <span class="tag-chip">Excel</span>
+                                        <!-- <span class="tag-chip">SQL</span> -->
+                                        <span class="tag-chip">Latex</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Data Preparation & Cleaning</li>
+                                        <li>Statistical Analysis</li>
+                                        <li>Project Management</li>
+                                        <li>Strategic Thinking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>Develop a comprehensive insitutional resource that supports strategic decision-making and planning. The project aimed to provdide a data-driven foundation for dialogue among trustees and faculty by benchmarking performance against 20 peer institutions.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <ul>
+                                        <li>Managed the end-to-end data lifecucle over a four-month period, including data ingestion, cleaning, and comparative analysis of peer-institution metrics.</li>
+                                        <li>Utilized Latex for document formatting and report generation.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>Succesfully published the 2024 Fact Book that serves as the primary reference for institutional performance and posiitioning among 20 peer institutions.</li>
+                                        <li>By covering 7 sections (e.g., Enrollment, Student Characteristics, Finance and Ops, Outcomes), the document is currently utilized by the college leadership to drive data-informed insitutional policies.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Work Samples</h4>
+                                    <ul>
+                                        <li>Executive KPI dashboard with drill-down views.</li>
+                                        <li>Campaign performance tracker with alerts.</li>
+                                    </ul>
+                                    <div class="work-samples work-samples-2col">
+                                        <img src="projects/factbook/freshmen.png" alt="Beloit Freshmen High School GPA Distribution" class="work-sample-image">
+                                        <img src="projects/factbook/domesticwhite.png" alt="Percent of Students who are Domestic White" class="work-sample-image">
+                                        <img src="projects/factbook/graduation.png" alt="Four-Year Graduation Rate" class="work-sample-image">
+                                        <img src="projects/factbook/retention.png" alt="Number of FTE students per Full-time faculty vs. Retention Rate" class="work-sample-image">                                       
+                                        <img src="projects/factbook/domesticminoritystaff.png" alt="Percentage of Full-time Staff who are domestic minority" class="work-sample-image">                             
+                                        <img src="projects/factbook/sectionsize.png" alt="Sections Under 20 Students" class="work-sample-image">                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/dataclinic/thumbnail.png" alt="Data Clinic thumbnail" class="project-thumb">
+                    </div>
+                    <div class="project-content">
+                        <h3>Finance Career Pathways</h3>
+                        <p>Mapped U.S. entry-level finance roles to reveal compensation trends, skill demand, and evolving job titles across regions for early-career professionals.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Entry-Level Finance Career Analysis</h3>
+                            <p class="project-detail-subtitle">Data Analysis</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Python</span>
+                                        <span class="tag-chip">SQL</span>
+                                        <span class="tag-chip">Excel</span>                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Market Research</li>
+                                        <li>ML Model Development</li>
+                                        <li>Report Writing</li>
+                                        <li>Project Management</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/1nUDA91N3qQna2u9EcWDZtYMBA6t506wi/view" target="_blank" rel="noopener">Full Report</a></li>
+                                        <li><a href="https://www.canva.com/design/DAGBjBjtIds/FETgIz5b_biOwIcZ4k6IoQ/edit" target="_blank" rel="noopener">Full Presentation</a></li>
+                                        <li><a href="https://github.com/jbach1610/job_scraping" target="_blank" rel="noopener">Full Source Code</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>To conduct a comprehensive analysis of the U.S. entry-level finance job market, specifically focusing on Investment Banking, Corporate Finance, and Portfolio Management.</p>
+                                    <p>The study aimed to identify regional trends in compensation, required skill sets, and evolving job titles to provide a roadmap for early-career professionals.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <ul>
+                                        <li>Engineered a data pipeline to scrape and clean datasets from 7000+ job postings for large-scale qualitative trend analysis.</li>
+                                         <li>Developed a Support Vector Machine (SVM) model to classify all listed skills into 10 groups.</li>
+                                        <li>Supplemented data findings with qualitative insights gathered through primary research and industry interviews.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>Presented a holistic overview of the finance sector's hiring landscape to a broad audience of students, faculty, and staff. </li>
+                                        <li>Published a 18-page report that synthesize quantitative datasets and qualitative insights into market insights (e.g., regional trends, skill demands, and job title evolution) and provide data-backed roadmap for navigating entry-level finance careers for students, advisors, and faculty.</li>
+
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Work Samples</h4>
+                                    <div class="work-samples work-samples-3col">
+                                        <img src="projects/dataclinic/quantitative.png" alt="Quantitative Methods" class="work-sample-image">
+                                        <img src="projects/dataclinic/geographical.png" alt="Geographical Analysis" class="work-sample-image">
+                                        <img src="projects/dataclinic/industry.png" alt="Industry Analysis" class="work-sample-image">
+                                        <img src="projects/dataclinic/titles.png" alt="Job Title Evolution" class="work-sample-image">
+                                        <img src="projects/dataclinic/skills.png" alt="Skills Demands" class="work-sample-image">
+                                        <img src="projects/dataclinic/compensation.png" alt="Compensation Analysis" class="work-sample-image">
+                                        <img src="projects/dataclinic/license.png" alt="license Analysis" class="work-sample-image">
+                                        <img src="projects/dataclinic/qualitative.png" alt="Qualitative Methods" class="work-sample-image">
+                                        <img src="projects/dataclinic/implications.png" alt="Implications" class="work-sample-image">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/dsda310-case2/thumbnail.png" alt="Delta Internal Intelligent Agent thumbnail" class="project-thumb">
+                    </div>
+                    <div class="project-content">
+                        <h3>Delta Internal Intelligent Agent</h3>
+                        <p>Built a retrieval-augmented system that answers stakeholder questions from Delta’s 10-K, ESG report, and shareholder data via a Streamlit dashboard.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Delta Internal Intelligent Agent</h3>
+                            <p class="project-detail-subtitle">RAG System & Analytics</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Python</span>
+                                        <span class="tag-chip">pdfplumber</span>
+                                        <span class="tag-chip">OCR</span>
+                                        <span class="tag-chip">TF-IDF</span>
+                                        <span class="tag-chip">Cosine Similarity</span>
+                                        <span class="tag-chip">Groq LLaMA-3.3-70B</span>
+                                        <span class="tag-chip">Streamlit</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Document processing & chunking</li>
+                                        <li>Information retrieval</li>
+                                        <li>Prompt design & guardrails</li>
+                                        <li>Dashboard design for non-technical users</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/1_AtyjoI7YaOoFckZq52q0yxUKcNGivMw/view" target="_blank" rel="noopener">Full Report</a></li>
+                                        <li><a href="https://www.canva.com/design/DAG6kiHBHdU/MjFstVj9LiFuDboHpZVzcQ/edit?utm_content=DAG6kiHBHdU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Full Presentation</a></li>
+                                        <li><a href="https://github.com/jbach1610/delta-intelligence-rag-system/tree/main" target="_blank" rel="noopener">Full Source Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>Build an end-to-end pipeline that extracts text from Delta’s corporate PDFs, retrieves relevant evidence, and answers questions strictly from verified sources in a user-friendly interface.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <ul>
+                                        <li><strong>Document Collection:</strong> Delta Air Lines 2024 Form 10-K, 2024 ESG Report, and major shareholders summary from Yahoo Finance.</li>
+                                        <li><strong>Data Processing Pipeline:</strong> PDF extraction with pdfplumber; OCR-first for the scan-like ESG report; cleaning, standardization, and sliding-window chunking (~600 words with 100-word overlap) into a unified store.</li>
+                                        <li><strong>Retrieval System:</strong> TF-IDF vectorization over all chunks with cosine similarity to rank top-$k$ results.</li>
+                                        <li><strong>LLM Integration:</strong> Groq LLaMA-3.3-70B with a structured prompt restricting answers to retrieved evidence and requiring chunk-ID citations.</li>
+                                        <li><strong>KPI Extraction:</strong> Semi-automated KPI extraction using regex plus manual validation (e.g., revenue, segments, customers, fuel savings, ESG targets).</li>
+                                        <li><strong>Streamlit App:</strong> Company Snapshot tab with KPI cards and overview; Ask-a-Question tab with guided prompts, cited answers, and chunk table.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>Delivered a functional RAG system that reliably retrieves company, risk, ESG, and shareholder evidence.</li>
+                                        <li>Provided transparent, cited answers and a two-tab Streamlit dashboard for non-technical users.</li>
+                                        <li>Documented limitations (OCR quality, manual KPI extraction, chunking strategy, API limits) and recommendations for future upgrades.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Work Samples</h4>
+                                    <div class="work-samples work-samples-3col">
+                                        <img src="projects/dsda310-case2/RAG system.png" alt="RAG system" class="work-sample-image">
+                                        <img src="projects/dsda310-case2/RAG system 2.png" alt="RAG system 2" class="work-sample-image">
+                                        <img src="projects/dsda310-case2/introduction.png" alt="introduction" class="work-sample-image">
+                                        <img src="projects/dsda310-case2/cleaning.png" alt="Cleaning & Chunking" class="work-sample-image">
+                                        <img src="projects/dsda310-case2/retrieval.png" alt="Retrieval" class="work-sample-image">
+                                        <img src="projects/dsda310-case2/kpi.png" alt="KPI Extraction" class="work-sample-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/nw/thumbnail.png" alt="Holistic Health Analysis thumbnail" class="project-thumb">
+                    </div>
+                    <div class="project-content">
+                        <h3>Holistic Health Analysis</h3>
+                        <p>Analyzed Northwestern Medicine survey data to compare Chicago-specific trends with national benchmarks and inform strategic planning.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Holistic Health Analysis</h3>
+                            <p class="project-detail-subtitle">Healthcare Analytics</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Python</span>
+                                        <span class="tag-chip">Survey Monkey</span>
+                                        <span class="tag-chip">Excel</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Data analysis & interpretation</li>
+                                        <li>Data visualization</li>
+                                        <li>Comparative analysis</li>
+                                        <li>Report & deck creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>To conduct a comparative analysis of healthcare survey data for Northwestern Medicine, identifying localized trends in Chicago versus national benchmarks to support strategic planning and decision-making.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <p>Synthesized complex survey datasets from national and regional studies to isolate key performance indicators and healthcare trends. Built a comprehensive presentation deck with data visualizations and cross-study comparisons to reveal distinct local market behaviors.</p>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <p>Produced a high-level strategic deck used by leadership to align regional initiatives with national healthcare patterns and allocate resources based on Chicago-specific insights.</p>
+                                </div>
+                                <div>
+                                    <h4>Work Samples</h4>
+                                    <div class="work-samples work-samples-2col">
+                                        <img src="projects/nw/regional key.png" alt="Regional key insights" class="work-sample-image">
+                                        <img src="projects/nw/hospital destination.png" alt="Hospital destination analysis" class="work-sample-image">
+                                        <img src="projects/nw/health factors.png" alt="Health factors comparison" class="work-sample-image">
+                                        <img src="projects/nw/at-home device.png" alt="At-home device usage" class="work-sample-image">
+                                        <img src="projects/nw/hopitals.png" alt="Hospital preferences" class="work-sample-image">
+                                        <img src="projects/nw/activities.png" alt="Health activities" class="work-sample-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/orangetree/thumbnail.png" alt="Sentiment Analysis thumbnail" class="project-thumb">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sentiment Analysis</h3>
+                        <p>Applied NLP sentiment analysis to My Sweet Orange Tree to uncover how compassion and self-compassion shape emotional language over time.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                    <div class="project-detail" hidden>
+                        <div class="project-detail-header">
+                            <h3>Sentiment Analysis</h3>
+                            <p class="project-detail-subtitle">NLP & Literary Analytics</p>
+                        </div>
+                        <div class="project-detail-grid">
+                            <div class="project-detail-sidebar">
+                                <div>
+                                    <h4>Tools</h4>
+                                    <div class="project-tags">
+                                        <span class="tag-chip">Python</span>
+                                        <span class="tag-chip">Jupyter Notebook</span>
+                                        <span class="tag-chip">Natural Language Processing</span>
+                                        <span class="tag-chip">Google Ngram Viewer</span>
+                                        <span class="tag-chip">Oxygen XML Editor</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>Skills</h4>
+                                    <ul>
+                                        <li>Sentiment analysis</li>
+                                        <li>Narrative development</li>
+                                        <li>NLP</li>
+                                        <li>Quantitative and thematic analysis</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/1OVNRUmkPmjxctLZskk3X03guVCGPxkhB/view" target="_blank" rel="noopener">Full Report</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1jpxB8q2Wk2HSucGRYIPCGQi13z3I9NQA/view" target="_blank" rel="noopener">Full Presentation</a></li>
+                                        <li><a href="https://github.com/jbach1610/sentiment-analysis" target="_blank" rel="noopener">Full Source Code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-detail-main">
+                                <div>
+                                    <h4>Objective</h4>
+                                    <p>Explore how the protagonist’s emotional growth and self-compassion influence language intensity and sentiment throughout My Sweet Orange Tree, and whether self-compassion mitigates negativity bias in the presence of abuse.</p>
+                                </div>
+                                <div>
+                                    <h4>Methodology</h4>
+                                    <ul>
+                                        <li>Combined qualitative close reading with quantitative NLP techniques.</li>
+                                        <li>Used Voyant Tools for word frequency, dispersion, and trend visualization.</li>
+                                        <li>Applied lexicon-based sentiment analysis with Bing, AFINN, and NRC emotion categories.</li>
+                                        <li>Framed findings with Negativity Bias, Self-Compassion Theory, and Attachment Theory.</li>
+                                        <li>Compared emotional language across secure vs. insecure attachment segments.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Results</h4>
+                                    <ul>
+                                        <li>Positive and trust-oriented language appears more frequently than expected despite the traumatic context.</li>
+                                        <li>Low-intensity negative terms suggest emotional regulation rather than suppression.</li>
+                                        <li>Trust and compassion language often outweigh sadness, even in abusive interactions.</li>
+                                        <li>Absence of extreme negative terms (e.g., “hate”) supports self-compassion mitigating negativity bias.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Work Samples</h4>
+                                    <div class="work-samples work-samples-2col">
+                                        <img src="projects/orangetree/context.png" alt="Book Context" class="work-sample-image">
+                                        <img src="projects/orangetree/hypothesis.png" alt="hypothesis" class="work-sample-image">
+                                        <img src="projects/orangetree/bing lexicon.png" alt="Bing Lexicon" class="work-sample-image">
+                                        <img src="projects/orangetree/neg words.png" alt="Valences" class="work-sample-image">
+                                        <img src="projects/orangetree/attchment in adulthood.png" alt="Adult Attachment" class="work-sample-image">
+                                        <img src="projects/orangetree/secure attachment.png" alt="Secure Attachment" class="work-sample-image">                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-controls">
+                <button id="toggle-projects" class="cta-button" aria-expanded="false">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal" role="document">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-body" tabindex="0"></div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged work sample images -->
+    <div id="image-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal image-modal" role="document">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-body" tabindex="0">
+                <img src="" alt="" id="image-modal-img" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands Section
     <section id="brands" class="brands-section">
         <div class="container">
-            <h2>Brands</h2>
+            <h2>Brands & <span class="highlight">Collaborations</span></h2>
             <div class="brands-grid">
                 <div class="brand-item">
-                    <img src="../assets/Northwestern_Medicine-440px.png" alt="Northwestern Medicine">
+                    <h3>The New York Times</h3>
+                    <p>Advertising Business Analytics Intern</p>
                 </div>
                 <div class="brand-item">
-                    <img src="../assets/Sherwin-Williams-logo.png" alt="Sherwin Williams">
+                    <h3>Voith Group</h3>
+                    <p>Data Analytics Intern</p>
                 </div>
                 <div class="brand-item">
-                    <img src="../assets/Michelob-Ultra-Logo.png" alt="Michelob Ultra">
+                    <h3>Beloit College</h3>
+                    <p>Economics & Data Analytics Major</p>
                 </div>
                 <div class="brand-item">
-                    <img src="../assets/Belle-Tire-Tireman.jpg" alt="Belle Tire">
+                    <h3>Break Through Tech</h3>
+                    <p>Machine Learning Certificate</p>
                 </div>
                 <div class="brand-item">
-                    <img src="../assets/ASPCA-logo.png" alt="ASPCA">
+                    <h3>The BrandLab</h3>
+                    <p>RISE Scholarship Recipient</p>
+                </div>
+                <div class="brand-item">
+                    <h3>Cornell Tech</h3>
+                    <p>ML Certificate Partner</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Hien Bach. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="mailto:btmhien1610@gmail.com">Email</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
+            <div class="footer-content">
+                <p>&copy; 2026 Hien Bach. Let's connect and build something amazing together!</p>
+                <div class="footer-links">
+                    <a href="mailto:btmhien1610@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/hienbach" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/hienbach" target="_blank">GitHub</a>
+                </div>
             </div>
         </div>
     </footer>
