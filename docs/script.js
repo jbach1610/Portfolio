@@ -40,8 +40,14 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections for animation
+// Observe all sections for animation (skip hero to avoid initial layout jump)
 document.querySelectorAll('section').forEach(section => {
+    if (section.id === 'about') {
+        section.style.opacity = '1';
+        section.style.transform = 'translateY(0)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        return;
+    }
     section.style.opacity = '0';
     section.style.transform = 'translateY(30px)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -204,30 +210,14 @@ function typeWriter(element, speed = 80) {
     setTimeout(type, 500);
 }
 
-// Intersection Observer for hero section typing animation
-const heroObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const heroTitle = entry.target.querySelector('.hero-title');
-            if (heroTitle && !heroTitle.hasAttribute('data-typed')) {
-                // Mark as typed to prevent re-triggering
-                heroTitle.setAttribute('data-typed', 'true');
-
-                // Start typing animation
-                typeWriter(heroTitle, 80);
-            }
-        }
-    });
-}, {
-    threshold: 0.5,
-    rootMargin: '0px 0px -100px 0px'
+// Start hero typing animation on initial load
+window.addEventListener('DOMContentLoaded', () => {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle && !heroTitle.hasAttribute('data-typed')) {
+        heroTitle.setAttribute('data-typed', 'true');
+        typeWriter(heroTitle, 80);
+    }
 });
-
-// Observe hero section for typing animation
-const heroSection = document.getElementById('about');
-if (heroSection) {
-    heroObserver.observe(heroSection);
-}
 
 // Parallax effect for hero section (subtle)
 window.addEventListener('scroll', function() {
